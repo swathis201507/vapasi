@@ -10,7 +10,6 @@ public class Circle extends Shape{
     double calculateArea() {
 
         double pi = 3.142, area;
-        // calculating the area of the circle
         area = pi * radius * radius;
 
         return area;
@@ -18,6 +17,6 @@ public class Circle extends Shape{
 
     @Override
     double calculatePerimeter() {
-        return 0;
+        return 2*Math.PI*radius;
     }
 }
