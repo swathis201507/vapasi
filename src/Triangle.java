@@ -11,7 +11,6 @@ public class Triangle extends Shape{
     double calculateArea() {
         double perimeter = side1 + side2 + side3;
 
-        // Calculate Area using Heron's formula
         double s = perimeter / 2;
         return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
     }
